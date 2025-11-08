@@ -16,7 +16,7 @@ def callLimit(limit: int):
                 count += 1
                 return function(*args, **kwds)
             else:
-                print(f"Error: {function} call to many times")
+                print(f"Error: {function} call too many times")
         return limit_function
 
     return callLimiter

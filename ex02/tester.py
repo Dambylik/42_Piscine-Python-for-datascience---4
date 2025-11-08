@@ -1,7 +1,7 @@
 from callLimit import callLimit
 
 
-@callLimit()
+@callLimit(3)
 def f():
     print("f()")
 
